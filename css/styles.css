@@ -68,6 +68,10 @@ section {
     background-color: transparent;
 }
 
+.dropdown-menu {
+    border: none;
+}
+
 .hero-btn-primary {
     background-color: #fff;
     color: #2b353e;
@@ -143,7 +147,8 @@ section {
     font-weight: 600;
 }
 
-.nav-link:focus, .nav-link:hover {
+.nav-link:focus,
+.nav-link:hover {
     color: #2b353e;
 }
 

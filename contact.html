@@ -28,6 +28,7 @@
         <!-- Custom CSS -->
         <link rel="stylesheet" href="css/styles.css" />
         <title>Travu - Explore The World!</title>
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-second">
@@ -54,10 +55,10 @@
                             <a class="nav-link" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="getaways.html">Getaways</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a
@@ -73,7 +74,12 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="greece.html">Greece</a></li>
                                 <li><a class="dropdown-item" href="bali.html">Bali</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="norway.html">Norway</a></li>
+                                <li><a class="dropdown-item" href="maldives.html">Maldives</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="switzerland.html">Switzerland</a>
+                                </li>
+                                <li><a class="dropdown-item" href="thailand.html">Thailand</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -81,135 +87,67 @@
             </div>
         </nav>
 
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active">Contact</li>
-                    </ol>
-                    <h2>Contact Us</h2>
+        <!-- Contact Us Section -->
+        <section class="mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active">Contact</li>
+                        </ol>
+                        <h2 class="mt-4">Contact Us</h2>
 
-                    <hr />
+                        <hr />
+                    </div>
                 </div>
-            </div>
 
-            <div class="row row-content align-items-center">
-                <div class="col-sm-4">
-                    <h5>Our Address</h5>
-                    <address>
-                        1 Nucamp Way<br />
-                        Seattle, WA 98001<br />
-                        U.S.A.
-                    </address>
+                <div class="row row-content align-items-center">
+                    <div class="col-sm-4">
+                        <h5>Our Address</h5>
+                        <address>
+                            46 Travel Abroad Road<br />
+                            Miami, FL 30501<br />
+                            U.S.A.
+                        </address>
+                    </div>
+                    <div class="col">
+                        <a role="button" class="btn" href="tel:+12065551234"
+                            ><i class="fa fa-phone"></i> (475) 451-8776</a
+                        ><br />
+                        <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"
+                            ><i class="fa fa-envelope-o"></i> info@travu.com</a
+                        >
+                    </div>
                 </div>
-                <div class="col">
-                    <a role="button" class="btn" href="tel:+12065551234"
-                        ><i class="fa fa-phone"></i> 1-206-555-1234</a
-                    ><br />
-                    <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"
-                        ><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a
-                    >
-                </div>
-            </div>
 
-            <div class="row row-content">
-                <div class="col-12">
-                    <h2>Send us your Feedback</h2>
-                    <hr />
-                </div>
-                <div class="col-md-10">
-                    <form>
-                        <div class="form-group row">
-                            <label for="firstName" class="col-md-2 col-form-label"
-                                >First Name</label
-                            >
-                            <div class="col-md-10">
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="firstName"
-                                    name="firstName"
-                                    placeholder="First Name"
-                                />
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
-                            <div class="col-md-10">
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="lastName"
-                                    name="lastName"
-                                    placeholder="Last Name"
-                                />
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="areaCode" class="col-md-2 col-form-label"
-                                >Contact Tel.</label
-                            >
-                            <div class="col-5 col-md-3">
-                                <input
-                                    type="tel"
-                                    class="form-control"
-                                    id="areaCode"
-                                    name="areaCode"
-                                    placeholder="Area code"
-                                />
-                            </div>
-                            <div class="col-7">
-                                <input
-                                    type="tel"
-                                    class="form-control"
-                                    name="telNum"
-                                    placeholder="Tel. number"
-                                />
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="email" class="col-md-2 col-form-label">Email</label>
-                            <div class="col-md-10">
+                <div class="row row-content mt-4">
+                    <div class="col-12">
+                        <h2>We'd love to hear from you!</h2>
+                        <hr />
+                    </div>
+                    <div class="col-md-10">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+
                                 <input
                                     type="email"
                                     class="form-control"
-                                    id="email"
-                                    name="email"
-                                    placeholder="Email"
+                                    id="exampleInputEmail1"
+                                    aria-describedby="emailHelp"
+                                />
+                                <label for="email" class="form-label">Email</label>
+
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="exampleInputEmail1"
+                                    aria-describedby="emailHelp"
                                 />
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col offset-md-2">
-                                May we contact you?
-                                <div class="form-check form-check-inline">
-                                    <input
-                                        type="radio"
-                                        class="form-check-input"
-                                        id="contactYes"
-                                        name="contactRadios"
-                                        value="yes"
-                                    />
-                                    <label for="contactYes" class="form-check-label">Yes</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input
-                                        type="radio"
-                                        class="form-check-input"
-                                        id="contactNo"
-                                        name="contactRadios"
-                                        value="no"
-                                    />
-                                    <label for="contactNo" class="form-check-label">No</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="feedback" class="col-md-2 col-form-label"
-                                >Your Feedback</label
-                            >
-                            <div class="col-md-10">
+                            <label for="email" class="form-label">Message</label>
+                            <div class="mb-4">
                                 <textarea
                                     class="form-control"
                                     id="feedback"
@@ -217,16 +155,13 @@
                                     rows="8"
                                 ></textarea>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="offset-md-2 col-md-10">
-                                <button type="submit" class="">Submit</button>
-                            </div>
-                        </div>
-                    </form>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
         <footer class="site-footer pb-5">
             <div class="container">
                 <div class="row pt-5">
@@ -235,24 +170,20 @@
                         <ul class="list-unstyled">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="aboutus.html">About</a></li>
-                            <li><a href="#">Sites</a></li>
-                            <li><a href="contactus.html">Contact</a></li>
+                            <li><a href="getaways.html">Getaways</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-sm-5 text-center">
-                        <h5 class="pb-2">Social</h5>
-                        <a href="http://instagram.com/"
-                            ><i class="fab fa-instagram fa-lg pr-2"></i
-                        ></a>
-                        <a href="http://facebook.com/"
-                            ><i class="fab fa-facebook-f fa-lg pr-2"></i
-                        ></a>
-                        <a href="http://twitter.com/"><i class="fab fa-twitter fa-lg pr-2"></i></a>
+                        <h5 class="pb-2">Follow Us!</h5>
+                        <a href="http://instagram.com/"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="http://facebook.com/"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="http://twitter.com/"><i class="fab fa-twitter fa-lg"></i></a>
                         <a href="http://youtube.com/"><i class="fab fa-youtube fa-lg"></i></a>
                     </div>
                     <div class="col-sm-4 text-center">
                         <strong>Tel:</strong> 1-206-555-1234<br />
-                        <strong>Email:</strong> campsites@nucamp.co
+                        <strong>Email:</strong> info@travu.co
                     </div>
                 </div>
             </div>
